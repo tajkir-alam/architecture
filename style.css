@@ -209,6 +209,48 @@ header .header{
     filter: grayscale(100%);
 }
 
+/* ------------
+ Extra Section
+-------------*/
+.extra-section{  
+    /* filter: grayscale(60%); */
+    background-image: url(images/banner1.jpg);
+    filter: grayscale(40%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+.extra-section .contact-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-section textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    resize: none;
+    outline: none;
+
+}
+.contact-section .personal-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+.personal-info input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    outline: none;
+}
+
+
+
 
 /* Footer Section */
 footer .footer-content{
