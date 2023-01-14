@@ -205,6 +205,9 @@ header .header{
     align-items: center;
     margin-top: 50px;
 }
+.sponsor-body > img{
+    filter: grayscale(100%);
+}
 
 
 /* Footer Section */
