@@ -190,3 +190,28 @@ header .header{
 }
 
 /* Sponsor Section */
+.sponsors .sponsor-head{
+    text-align: center;
+}
+.sponsor-head .sponsor-details{
+    margin: 30px auto;
+    width: 50%;
+}
+.sponsor-body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/* Footer Section */
+footer .footer-content{
+    text-align: center;
+    padding: 30px 0px;
+    border-radius: 10px;
+    color: #424242;
+    background: #FFF4E7;
+}
