@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common Sections */
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    margin: 0px 150px;
+}
+.p-5{
+    padding: 0px 50px;
+}
+.mt-5{
+    margin-top: 100px;
+    border: 1px solid yellow;
+}
+
+
+/* Header Section */
+header{
+    background: rgba(255, 144, 14, 0.1);
+}
+header .header{
+    padding-top: 30px;
+}
+.header .menu-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-bar .header-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.menu-bar .nav ul{
+    display: flex;
+    gap: 40px;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #424242;
+}
