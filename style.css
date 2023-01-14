@@ -3,13 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    --primary-color: #131313;
-    --secondary-color: #727272;
-}
+
 /* Common Sections */
 body{
     font-family: 'Work Sans', sans-serif;
+}
+.primary-color{
+    color: #131313;
+}
+.secondary-color{
+    color: #727272;
 }
 .btn{
     font-size: 18px;
@@ -29,11 +32,12 @@ body{
 }
 .mt-5{
     margin-top: 100px;
-    border: 1px solid yellow;
 }
 
-
-/* Header Section */
+/* -------------
+ Header Section
+------------- */
+/* Nav Section */
 header{
     background: rgba(255, 144, 14, 0.1);
 }
@@ -74,15 +78,40 @@ header .header{
 .banner-content .banner-title{
     font-size: 62px;
     font-weight: 600;
-    color: var(--primary-color);
 }
 .banner-content .banner-details{
     max-width: 80%;
     font-weight: 400;
-    color: var(--secondary-color);
     margin: 30px auto;
 }
 .banner .banner-img > img{
     max-width: 100%;
     margin-bottom: 40px;
+}
+
+/* -------------
+ Main Section
+------------- */
+/* Grid Section */
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+.grid-container .grid-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.grid-container .grid-img > img{
+    width: 100%;
+}
+.grid-txt .grid-title{
+    font-weight: 500;
+    font-size: 45px;    
+    color: #FF900E;
+}
+.grid-txt .grid-description{
+    margin: 30px 0px;
 }
