@@ -103,6 +103,7 @@ header .header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    padding: 0px 30px;
 }
 .grid-container .grid-img > img{
     width: 100%;
@@ -156,3 +157,36 @@ header .header{
     font-weight: 500;
     font-size: 16px;
 }
+
+/* Facts Section */
+.facts{
+    width: 45%;
+}
+.facts .facts-title{
+    margin-bottom: 25px;
+}
+.counter .counter-container{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    padding: 0px 30px;
+}
+.counter .counter-content{
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.counter-content .counter-number{
+    font-weight: 600;
+    font-size: 42px;
+    color: #424242;
+}
+.counter-content .counter-title{
+    font-weight: 600;
+    font-size: 18px;
+    color: #727272;
+}
+
+/* Sponsor Section */
