@@ -3,10 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --primary-color: #131313;
+    --secondary-color: #727272;
+}
 /* Common Sections */
 body{
     font-family: 'Work Sans', sans-serif;
+}
+.btn{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background: #FF900E;
+    padding: 20px 25px;
+    cursor: pointer;
 }
 .container{
     margin: 0px 150px;
@@ -49,4 +62,27 @@ header .header{
     font-size: 16px;
     font-weight: 500;
     color: #424242;
+}
+
+/* Banner Section */
+.banner{
+    text-align: center;
+}
+.banner .banner-content{
+    padding: 100px 0px 50px 0px;
+}
+.banner-content .banner-title{
+    font-size: 62px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.banner-content .banner-details{
+    max-width: 80%;
+    font-weight: 400;
+    color: var(--secondary-color);
+    margin: 30px auto;
+}
+.banner .banner-img > img{
+    max-width: 100%;
+    margin-bottom: 40px;
 }
