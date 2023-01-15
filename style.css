@@ -194,35 +194,48 @@ header .header{
     height: 50%;
     width: 50%;
     transition: .5s;
-}                 
-
-
+}
 .counter-content .animation-1{
     top: 0;
     right: 0;
     transform: translate(-200%, 0);
     border-radius: 10px 0px 0px 0px;
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: rgba(78, 68, 226, 0.5);
     visibility: hidden;
 }
 .counter-content .award:hover .animation-1{
     transform: translate(-100%);
+    animation: animated-1 0.9s 2 linear; 
     visibility: visible;
 }
-
-
+@keyframes animated-1{
+    30%{
+        background-color: black;
+    }
+    100%{
+        background-color: rgba(255, 255, 0, .7);
+    }
+}
 .counter-content .award .animation-2{
     top: 0;
     right: 0;
     transform: translate(0, -100%);
     border-radius: 0px 9px 0px 0px;
-    background-color: rgba(114, 114, 114, 0.5);
+    background-color: rgba(0, 255, 255, 0.5);
     visibility: hidden;
-    transition-delay: .3s;
 }
 .counter-content .award:hover .animation-2{
     transform: translate(0, 0);
     visibility: visible;
+    animation: animated-1 0.9s 2 linear;  
+}
+@keyframes animated-2{
+    30%{
+        background-color: black;
+    }
+    100%{
+        background-color: rgba(255, 255, 0, .7);
+    }
 }
 .counter-content .animation-3{
     bottom: 0;
@@ -231,28 +244,41 @@ header .header{
     border-radius: 0px 0px 0px 10px;
     background-color: rgba(0, 255, 255, 0.5);
     visibility: hidden;
-    transition-delay: .6s;
 }
 .counter-content .award:hover .animation-3{
     transform: translate(0, 0);
     visibility: visible;
+    animation: animated-1 0.9s 2 linear; 
 }
-
-
+@keyframes animated-3{
+    30%{
+        background-color: black;
+    }
+    100%{
+        background-color: rgba(255, 255, 0, .7);
+    }
+}
 .counter-content .animation-4{
     bottom: 0;
     right: 0;
     transform: translate(100%, 0);
     border-radius: 0px 0px 9px 0px;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(78, 68, 226, 0.5);
     visibility: hidden;
-    transition-delay: .8s;
 }
 .counter-content .award:hover .animation-4{
     transform: translate(0, 0);
     visibility: visible;
+    animation: animated-1 0.9s 2 linear; 
 }
-
+@keyframes animated-4{
+    30%{
+        background-color: black;
+    }
+    100%{
+        background-color: rgba(255, 255, 0, .7);
+    }
+}
 
 .counter-content >img{
     z-index: 111;
