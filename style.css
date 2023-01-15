@@ -377,10 +377,6 @@ header .header{
     outline: none;
 }
 
-
-
-
-
 /* Footer Section */
 footer .footer-content{
     text-align: center;
@@ -390,7 +386,11 @@ footer .footer-content{
     background: #FFF4E7;
     margin-top: 50px;
 }
-
+.footer-content p > a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #424242;
+}
 
 
 /* --------------------------
