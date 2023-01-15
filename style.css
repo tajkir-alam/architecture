@@ -572,6 +572,11 @@ footer .footer-content{
         background-color: rgb(135, 161, 209);
     }
 
+    /* Grid Section */
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     /* Feature Section */
     .feature-container{
         grid-template-columns: repeat(1, 1fr);
@@ -583,5 +588,15 @@ footer .footer-content{
     .feature-img .experience{
         transform: translate(40%, -50%);
         width: 40%;
+    }
+
+    /* Counter Section */
+    .counter .counter-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Section */
+    .contact-section .personal-info{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
