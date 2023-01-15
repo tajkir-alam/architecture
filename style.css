@@ -153,15 +153,26 @@ header .header{
 .feature-container .feature-img-container .feature-img{
     position: relative;
 }
-.feature-section .experience{
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
+.feature-img .experience{
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background: #FF900E;
     position: absolute;
     transform: translate(-30%, -50%);
-    padding: 20px 30px;
+    cursor: default;
+    width: 35%;
 }
-.experience .sub-experience{
+.experience .experience-container{
+    max-width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+.experience-container .experience-txt{
+    font-size: 30px;
+    font-weight: 700;
+}
+.experience-txt .sub-experience{
     font-weight: 500;
     font-size: 16px;
 }
@@ -222,6 +233,7 @@ header .header{
     }
     100%{
         background-color: rgba(255, 255, 0, .7);
+
     }
 }
 .counter-content .award .animation-2{
