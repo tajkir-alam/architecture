@@ -165,6 +165,8 @@ header .header{
 .facts .facts-title{
     margin-bottom: 25px;
 }
+
+/* Counter Section */
 .counter .counter-container{
     display: grid;
     gap: 50px;
@@ -173,20 +175,99 @@ header .header{
     padding: 0px 30px;
 }
 .counter .counter-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
     text-align: center;
     border: 1px solid #FF900E;
     border-radius: 10px;
-    padding: 40px 30px;
+
+    /* For Animation */
+    position: relative;
+}
+
+.counter-content .animation{                                /* Counter Animation Css */
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    transition: .5s;
+}                 
+
+
+.counter-content .animation-1{
+    top: 0;
+    right: 0;
+    transform: translate(-200%, 0);
+    border-radius: 10px 0px 0px 0px;
+    background-color: rgba(255, 255, 0, 0.5);
+    visibility: hidden;
+}
+.counter-content .award:hover .animation-1{
+    transform: translate(-100%);
+    visibility: visible;
+}
+
+
+.counter-content .award .animation-2{
+    top: 0;
+    right: 0;
+    transform: translate(0, -100%);
+    border-radius: 0px 9px 0px 0px;
+    background-color: rgba(114, 114, 114, 0.5);
+    visibility: hidden;
+    transition-delay: .3s;
+}
+.counter-content .award:hover .animation-2{
+    transform: translate(0, 0);
+    visibility: visible;
+}
+.counter-content .animation-3{
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 100%);
+    border-radius: 0px 0px 0px 10px;
+    background-color: rgba(0, 255, 255, 0.5);
+    visibility: hidden;
+    transition-delay: .6s;
+}
+.counter-content .award:hover .animation-3{
+    transform: translate(0, 0);
+    visibility: visible;
+}
+
+
+.counter-content .animation-4{
+    bottom: 0;
+    right: 0;
+    transform: translate(100%, 0);
+    border-radius: 0px 0px 9px 0px;
+    background-color: rgba(255, 0, 0, 0.5);
+    visibility: hidden;
+    transition-delay: .8s;
+}
+.counter-content .award:hover .animation-4{
+    transform: translate(0, 0);
+    visibility: visible;
+}
+
+
+.counter-content >img{
+    z-index: 111;
 }
 .counter-content .counter-number{
     font-weight: 600;
     font-size: 42px;
     color: #424242;
+    z-index: 111;
 }
 .counter-content .counter-title{
     font-weight: 600;
     font-size: 18px;
     color: #727272;
+    z-index: 111;
 }
 
 /* Sponsor Section */
@@ -248,6 +329,7 @@ header .header{
     font-weight: 500;
     outline: none;
 }
+
 
 
 
