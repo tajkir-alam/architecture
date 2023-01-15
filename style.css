@@ -404,7 +404,7 @@ footer .footer-content{
 @media screen and (max-width: 576px) {
     /* Common Styles */
     .container{
-        margin: 0 50px;
+        margin: 0 30px;
     }
 
     /* Header Section */
@@ -470,7 +470,78 @@ footer .footer-content{
     .contact-section .personal-info{
         grid-template-columns: repeat(1, 1fr);
     }
+}
 
-    /* Footer Section */
+/* Device width >576px & <768 */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    /* Common Styles */
+    .container{
+        margin: 0 50px;
+    }
 
+    /* Header Section */
+    .menu-bar .header-title{
+        font-size: 30px;
+    }
+    .menu-bar .nav ul{
+        display: none;
+    }
+    .menu-bar .bar-icon{
+        display: block;
+    }
+
+    /* Banner Section */
+    .banner-content .banner-title{
+        font-size: 50px;
+    }
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+     /* Feature Section */
+     .feature-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+    .feature-container .feature-img-container .feature-img> img{
+        width: 100%;
+    }
+    .feature-img .experience{
+        transform: translate(70%, -50%);
+        width: 40%;
+    }
+
+    /* Facts Section */
+    .facts, .sponsor-head .sponsor-details{
+        width: 100%;
+    }
+
+    /* Counter Section */
+    .counter .counter-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Extra Section */
+    .extra-section{
+        padding: 50px;
+    }
+    .contact-section .personal-info{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Device width > 768 & <1024 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Feature Section */
+    .feature-container{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+    .feature-container .feature-img-container .feature-img> img{
+        width: 70%;
+    }
+    .feature-img .experience{
+        transform: translate(40%, -50%);
+        width: 40%;
+    }
 }
