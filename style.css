@@ -67,10 +67,7 @@ header .header{
     font-weight: 500;
     color: #424242;
 }
-            /* Nav bar icon for Mobile and tablet. "Won't work just show */
-.menu-bar .bar-icon{
-    display: none;
-}
+
 
 /* Banner Section */
 .banner{
@@ -411,11 +408,21 @@ footer .footer-content{
     .menu-bar .header-title{
         font-size: 24px;
     }
-    .menu-bar .nav ul{
-        display: none;
-    }
-    .menu-bar .bar-icon{
+    .header .menu-bar{
         display: block;
+        text-align: center;
+    }
+    .menu-bar .nav ul{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .menu-bar .nav ul li{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .menu-bar .nav ul li:hover{
+        background-color: rgb(135, 161, 209);
     }
 
     /* Banner Section */
@@ -483,17 +490,32 @@ footer .footer-content{
     .menu-bar .header-title{
         font-size: 30px;
     }
-    .menu-bar .nav ul{
-        display: none;
-    }
-    .menu-bar .bar-icon{
+    .header .menu-bar{
         display: block;
+        text-align: center;
+    }
+    .menu-bar .nav ul{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .menu-bar .nav ul li{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .menu-bar .nav ul li:hover{
+        background-color: rgb(135, 161, 209);
     }
 
     /* Banner Section */
+    .banner .banner-content{
+        padding: 50px 0px 50px 0px;
+    }
     .banner-content .banner-title{
         font-size: 50px;
     }
+
+    /* Grid Section */
     .grid-container{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -532,6 +554,24 @@ footer .footer-content{
 
 /* Device width > 768 & <1024 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Menu Bar Section */
+    .header .menu-bar{
+        display: block;
+        text-align: center;
+    }
+    .menu-bar .nav ul{
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .menu-bar .nav ul li{
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .menu-bar .nav ul li:hover{
+        background-color: rgb(135, 161, 209);
+    }
+
     /* Feature Section */
     .feature-container{
         grid-template-columns: repeat(1, 1fr);
