@@ -108,6 +108,10 @@ header .header{
 }
 .grid-container .grid-img > img{
     max-width: 100%;
+    transition: 0.5s;
+}
+.grid-img img:hover{
+    filter: grayscale(100%);
 }
 .grid-txt .grid-title{
     font-weight: 500;
